@@ -71,6 +71,7 @@ body {
 
 .emailinput {
     background-color: #202936;
+    color: #ccc;
     padding: 13px 210px 13px 10px;
     border: 1px solid #323A47;
     border-radius: 10px;
