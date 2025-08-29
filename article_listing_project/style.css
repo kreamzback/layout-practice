@@ -1,0 +1,71 @@
+body {
+  background-image: url('images/space.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.action-block {
+    width: 900px;
+    height: 600px;
+    background: white;
+    border-radius: 12px;
+    position: relative;
+}
+
+.action-block::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -12px;
+    background: linear-gradient(180deg, #222754, #602D40);
+    border-radius: 20px;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    margin: 28px 0 0 0;
+    font-size: 24px;
+}
+
+.slashs {
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -1px;
+    color: #d8d8d8;
+}
+
+.info-block {
+    display: flex;
+}
+
+.info-block img {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    margin: 20px 0 15px 175px;
+}
+
+.fat-text {
+    margin: 40px 0 0 40px;
+    font-size: 14px;
+}
+
+.thin-text {
+    color: #C1C4CA;
+    font-size: 10px;
+    margin: 10px 0 0 40px;
+}
