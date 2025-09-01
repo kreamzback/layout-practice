@@ -10,14 +10,16 @@ body {
   color: black;
 }
 
-.parent-container {
+.parent-container.large {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    margin-left: 200px;
     height: 100vh;
 }
 
-.action-block {
+.action-block.large {
     width: 900px;
     height: 600px;
     background: white;
@@ -25,7 +27,7 @@ body {
     position: relative;
 }
 
-.action-block::before {
+.action-block.large::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -34,18 +36,18 @@ body {
     border-radius: 20px;
 }
 
-.title {
+.title{
     display: block;
     text-align: center;
     margin: 28px 0 0 0;
-    font-size: 24px;
+    font-size: clamp(18px, 2vw, 24px);
 }
 
 .slashs {
-    font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: -1px;
     color: #d8d8d8;
+    font-size: clamp(8px, 0.8vw, 12px);
 }
 
 .info-block {
@@ -61,11 +63,74 @@ body {
 
 .fat-text {
     margin: 40px 0 0 40px;
-    font-size: 14px;
+    font-size: clamp(12px, 1.2vw, 16px);
 }
 
 .thin-text {
     color: #C1C4CA;
-    font-size: 10px;
     margin: 10px 0 0 40px;
+    font-size: clamp(10px, 1vw, 14px);
+}
+
+/* -------------------------------------------action-block.small------------------------------> */
+
+.parent-container.small {
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    height: 100vh;
+    z-index: 2;
+}
+
+.action-block.small {
+    width: 350px;
+    height: 450px;
+    background: white;
+    border-radius: 12px;
+    position: relative;
+}
+
+.action-block.small::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -12px;
+    background: linear-gradient(180deg, #222754, #602D40);
+    border-radius: 20px;
+}
+
+.title-small{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+.slashs-small {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -1px;
+    color: #d8d8d8;
+    font-size: 8px;
+}
+
+.info-block-small {
+    display: flex;
+}
+
+.info-block-small img {
+    width: 90px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 5px 0 20px 20px;
+}
+
+.fat-text-small {
+    margin: 20px 20px 5px 20px;
+    font-size: 9px;
+}
+
+.thin-text-small {
+    color: #C1C4CA;
+    margin: 5px 0 0 20px;
+    font-size: 7px;
 }
