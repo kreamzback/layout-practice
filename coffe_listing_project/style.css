@@ -1,0 +1,149 @@
+body {
+    background-image: url("./images/bg-cafe.jpg");
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-color: #111315;
+    margin: 30px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.main-block {
+    width: 1150px;
+    height: 800px;
+    background-color: #1B1D1F;
+    margin: 80px 0 0 0;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight:600;
+    font-size: 30px;
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+.undertitle-text {
+    font-size: 16px;
+    color: #6F757B;
+    line-height: 22px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.all-products-btn {
+    background-color: transparent;
+    font-size: 14px;
+    width: 105px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 15px 0 0;
+    border: none;
+}
+
+.available-now-btn {
+    background-color: transparent;
+    font-size: 14px;
+    width: 105px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 20px 0 0;
+    border: none;
+}
+
+.buttons button:hover {
+    background-color: #4D5562;
+    cursor: pointer;
+}
+
+.card-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px 0 0 30px;
+}
+
+.card-wrapper.margin {
+    margin-left: 150px;
+}
+
+.card {
+    display: flex;
+}
+
+.card.popular::before {
+    content: "Popular";
+    position: absolute;
+    background-color: #F6C768;
+    color: black;
+    font-weight: 600;
+    margin: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 55px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.card img {
+    border-radius: 12px;
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDE3CC;
+    width: 45px;
+    height: 25px;
+    color: black;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.rating {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.count-reviews {
+    margin: 0 0 0 5px;
+}
+
+.rating.empty::before {
+    margin: 5px 0 0 0;
+    content: url("./images/Star.svg");
+}
+
+.rating::before {
+    margin: 5px 0 0 0;
+    content: url("./images/Star_fill.svg");
+}
+
+.sold-out {
+    margin: 0 0 0 95px;
+    color: #ED735D;
+}
